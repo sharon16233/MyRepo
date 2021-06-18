@@ -14,6 +14,7 @@ public class Utils {
     public static String getValue(String key) throws IOException {
         InputStream input = new FileInputStream(fileLocation);
         prop.load(input);
+        System.out.println("Hello world");
 
         return prop.get(key).toString();
     }
