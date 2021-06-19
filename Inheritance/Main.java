@@ -3,10 +3,10 @@ package Inheritance;
 public class Main {
     public static void main(String[] args) {
 
-        PrivateCar car = new PrivateCar("Toyota");
+        PrivateCar car2 = new PrivateCar("Toyota");
         car.getData();
 
-        Motorcycle motorcycle = new Motorcycle("Honda");
+        Motorcycle motorcycle2 = new Motorcycle("Honda");
         motorcycle.getData();
 
     }
