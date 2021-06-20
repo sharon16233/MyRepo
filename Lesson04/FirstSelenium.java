@@ -13,7 +13,5 @@ public class FirstSelenium {
         driver.manage().window().maximize();
         driver.get(Constants.URL);
         driver.close();
-        System.out.println("Hello");
-
     }
 }
