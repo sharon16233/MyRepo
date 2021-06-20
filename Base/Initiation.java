@@ -18,6 +18,6 @@ public class Initiation {
 
     @AfterClass
     public static void closeDriver() {
-        Browser.getDriver().close();
+        Browser.getDriver().quit();
     }
 }
