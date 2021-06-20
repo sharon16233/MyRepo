@@ -16,8 +16,6 @@ public class SystemVariables {
         prop.load(new FileInputStream(appConfigPath));
 
         System.out.println(prop.getProperty("browser"));
-
-
     }
 
 }
