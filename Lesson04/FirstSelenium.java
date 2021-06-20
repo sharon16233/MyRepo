@@ -14,8 +14,6 @@ public class FirstSelenium {
         driver.get(Constants.URL);
         Thread.sleep(Constants.THREE_SECONDS);
         System.out.println(driver.getTitle());
-        System.out.println("Hello world");
-        System.out.println("Hello World2");
         driver.quit();
     }
 }
