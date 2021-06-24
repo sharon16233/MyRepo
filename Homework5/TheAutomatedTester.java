@@ -8,7 +8,7 @@ public class TheAutomatedTester {
 
     public static final String baseUrl = "http://book.theautomatedtester.co.uk/chapter1";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = Utils.getDriver();
         driver.get(baseUrl);
@@ -18,6 +18,7 @@ public class TheAutomatedTester {
 
         System.out.println(textBoxField.getText());
         Utils.clickOnElement(loadTextButton);
+        Utils.waitForElement(Utils.ONE_SECOND);
         System.out.println(textBoxField.getText());
 
         driver.quit();

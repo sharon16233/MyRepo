@@ -10,6 +10,9 @@ public class Utils {
 
     public static final String WEB_DRIVER = "webdriver.chrome.driver";
     public static final String CHROME_DRIVER_LOCATION = "D:\\New folder\\IntelligiTest\\chromedriver.exe";
+    public static final int ONE_SECOND = 1000;
+    public static final int TWO_SECONDS = 2000;
+    public static final int THREE_SECONDS = 3000;
 
     public static WebDriver getDriver() {
         System.setProperty(WEB_DRIVER, CHROME_DRIVER_LOCATION);

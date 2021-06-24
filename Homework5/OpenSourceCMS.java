@@ -9,7 +9,6 @@ public class OpenSourceCMS {
     public static final String baseUrl = "https://s2.demo.opensourcecms.com/orangehrm/symfony/web/index.php/auth/login";
     public static final String username = "opensourcecms";
     public static final String password = "opensourcecms";
-    public static final int THREE_SECONDS = 3000;
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -23,7 +22,7 @@ public class OpenSourceCMS {
         Utils.inputText(userNameField, username);
         Utils.inputText(passwordField, password);
         Utils.clickOnElement(loginButton);
-        Utils.waitForElement(THREE_SECONDS);
+        Utils.waitForElement(Utils.THREE_SECONDS);
 
         System.out.println(driver.getCurrentUrl());
 

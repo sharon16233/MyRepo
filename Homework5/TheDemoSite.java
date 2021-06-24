@@ -8,7 +8,7 @@ public class TheDemoSite {
 
     public static final String baseUrl = "http://thedemosite.co.uk/";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = Utils.getDriver();
         driver.get(baseUrl);
@@ -17,6 +17,7 @@ public class TheDemoSite {
 
         WebElement databaseButton = driver.findElement(By.linkText("2. The Database"));
         Utils.clickOnElement(databaseButton);
+        Utils.waitForElement(Utils.ONE_SECOND);
 
         System.out.println(driver.getPageSource());
 
